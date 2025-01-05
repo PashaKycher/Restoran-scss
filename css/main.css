@@ -177,7 +177,7 @@ img {
     top: 0;
     left: 0;
     visibility: visible;
-    background-image: url("../assets/images/menu-icon.png") no-repeat;
+    background-image: url("../../assets/images/menu-icon.png") no-repeat;
   }
 }
 @media screen and (max-width: 425px) {
