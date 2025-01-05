@@ -1,0 +1,100 @@
+.reserve {
+    padding-top: 113px;
+    padding-bottom: 39px;
+    background-color: rgba(255, 244, 231, 0.4);
+
+    &.container {
+        max-width: 1466px;
+        margin-right: 120px;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        margin-left: -200px;
+    }
+
+    &__right {
+        margin-left: 103px;
+
+        & h2 {
+            font-family: "Tinos", serif;
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 110%;
+            margin-bottom: 50px;
+            color: $black;
+
+            & span {
+                color: $orange;
+            }
+        }
+
+        & p {
+            font-size: 20px;
+            color: #5C4529;
+            line-height: 220%;
+            margin-bottom: 50px;
+            margin-bottom: 132px;
+        }
+
+        & button {
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            padding: 17px 55px;
+            border-radius: 162px;
+            background-color: $orange;
+
+            &:hover {
+                background-color: $green;
+                transform: scale(1.05);
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+
+    .reserve {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-left: 0;
+
+        .reserve-inner {
+            .reserve__left {
+                display: none;
+            }
+
+            .reserve__right {
+                margin-left: 0;
+                h2 {
+                    text-align: center;
+                    font-size: 60px;
+                    line-height: 100%;
+                }
+    
+                p {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 100%;
+                    margin-bottom: 10px;
+                }
+    
+                button {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

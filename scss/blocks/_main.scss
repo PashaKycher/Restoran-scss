@@ -1,0 +1,99 @@
+.main {
+    margin-top: 166px;
+
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__about {
+            color: $orange;
+            background-color: $white-orange;
+            padding: 10px 34px;
+            border-radius: 126px;
+            display: inline;
+
+        }
+
+        h1 {
+            color: $black;
+            font-size: 80px;
+            font-family: "Raleway", serif;
+            line-height: 110%;
+            font-weight: 700;
+            margin-top: 23px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 200%;
+            margin-bottom: 77px;
+            color: $black;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-around;
+
+            button {
+                color: #fff;
+                font-size: 20px;
+                border: none;
+                padding: 17px 62px;
+                border-radius: 126px;
+                display: inline;
+
+                &:first-of-type {
+                    background-color: $orange;
+                }
+
+                &:last-of-type {
+                    background-color: $green;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: transform 0.5s ease;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+
+    .main {
+        .main-content {
+            display: block;
+
+            h1 {
+                text-align: center;
+                font-size: 60px;
+                line-height: 100%;
+            }
+
+            p {
+                text-align: center;
+                font-size: 16px;
+                line-height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main {
+        .main-content {
+            .main-content__buttons {
+                button {
+                    font-size: 16px;
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}

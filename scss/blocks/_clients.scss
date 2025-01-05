@@ -1,0 +1,94 @@
+.clients {
+    background-color: rgba(208, 204, 199, 0.2);
+    padding: 71px 0 99px 0;
+    margin-bottom: 238px;
+
+    .clients-inner {
+        background-image: url("../../assets/images/bg-clients.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: center;
+
+        .clients-title {
+            font-family: "Tinos", serif;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 200%;
+            color: $black;
+            margin-bottom: 57px;
+        }
+
+        .clients-about {
+            &-img {
+                margin: auto;
+                margin-bottom: 41px;
+            }
+
+            &-title {
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 200%;
+                color: $black;
+                margin-bottom: 5px;
+            }
+
+            &-text {
+                font-size: 20px;
+                color: #5C4529;
+                line-height: 200%;
+                margin-bottom: 65px;
+            }
+
+            &-inner {
+                position: relative;
+                width: 50%;
+                margin: auto;
+
+                & p {
+                    color: #5C4529;
+                    font-size: 20px;
+                    line-height: 200%;
+                }
+
+                & #dot1 {
+                    position: absolute;
+                    top: -30px;
+                    left: -20px;
+                    transform: rotate(180deg);
+                }
+
+                & #dot2 {
+                    position: absolute;
+                    bottom: -30px;
+                    right: -20px;
+                }
+            }
+
+            &-users {
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+
+    .clients {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 0;
+
+        .clients-inner {
+
+            .clients-title {
+                text-align: center;
+                font-size: 60px;
+                line-height: 100%;
+            }
+        }
+    }
+}

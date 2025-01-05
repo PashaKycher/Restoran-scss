@@ -1,0 +1,97 @@
+.chefs {
+    padding-top: 175px;
+    padding-bottom: 271px;
+    text-align: center;
+
+    & h2 {
+        font-family: "Tinos", serif;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 200%;
+        color: $black;
+        margin-bottom: 135px;
+    }
+
+    & .chefs-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+
+        & .chefs-item {
+            width: 30%;
+            text-align: center;
+
+            & h3 {
+                font-weight: 600;
+                font-size: 25px;
+                color: $black;
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+
+            & p {
+                font-size: 14px;
+                color: #A08D76;
+                line-height: 200%;
+            }
+        }
+    }
+
+    & .chefs-btn {
+        & button {
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            padding: 17px 78px;
+            border-radius: 162px;
+            background-color: $orange;
+
+            &:hover {
+                background-color: $green;
+                transform: scale(1.05);
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+
+    .chefs {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h2 {
+            text-align: center;
+            font-size: 60px;
+            line-height: 100%;
+        }
+
+        .chefs-inner {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            h2 {
+                text-align: center;
+                font-size: 60px;
+                line-height: 100%;
+            }
+
+            p {
+                text-align: center;
+                font-size: 16px;
+                line-height: 100%;
+            }
+
+            button {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
